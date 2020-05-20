@@ -4,4 +4,6 @@
   <li><%= @restaurant.phone_number %></li>
   <li><%= @restaurant.category %></li>
 </ul>
-<%= link_to "🔙 Overview", restaurants_path %>
+
+<%= link_to "🔙 Back to Overview", restaurants_path %> |
+<%= link_to "➕ Add a Review", new_restaurant_review_path(@restaurant) %>
