@@ -5,6 +5,8 @@ class RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
+    # If you want to get form at show action
+    # @review = Review.new
   end
   # get see form
   def new
