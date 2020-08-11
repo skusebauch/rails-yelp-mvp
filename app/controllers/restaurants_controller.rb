@@ -6,11 +6,11 @@ class RestaurantsController < ApplicationController
   def show
     @restaurant = Restaurant.find(params[:id])
   end
-
+  # get see form
   def new
     @restaurant = Restaurant.new
   end
-
+  # post submit form
   def create
     @restaurant = Restaurant.create(restaurant_params)
     if @restaurant.save
